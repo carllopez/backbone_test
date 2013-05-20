@@ -5,7 +5,7 @@ define([
 	'text!views/index/helpers/index.html',
 	], function($, _, Backbone, indexTemplate) {
 		var indexView = Backbone.View.extend({
-			el: 'body',
+			el: '#backbone-view',
 
 			render: function() {
 				$(this.el).append(_.template(indexTemplate));
